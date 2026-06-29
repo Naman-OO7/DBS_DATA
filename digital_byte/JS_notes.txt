@@ -1,0 +1,57 @@
+What is a language? - medium to communicate with each other.
+.:;-> tokens-> smallest unit of any programming language.
+Keywords-> reserved/pre defined words in programming language.
+variables-> varibales are the container to store the values and variables are changeable.
+constants-> constants are the container but we can't change the value of the constants.
+= -> assignment operator, 10,20-> literals.
+let-> let provides block-scoped variable declaration. It prevents variable hoisting issues and forbids redeclaration within the same scope. Use let for values that change over time.
+var-> The original declaration keyword, var is function-scoped or globally scoped. It hoists variables to the top of their scope, allowing access before declaration, which often causes bugs.
+Data types->{number->[0 to 9], string->[a to z /` A to Z], boolean->[0->false, 1->true], undefined->[value not assigned/ not initialization but created],
+null->[garbage value], BigInt, symbol.}-> Pre-defined
+type cast-> forcing the varible into different predefiend data type. 
+implicit and explicit.
+implicit-> occurs by the system through opearators(*) ,[+]->concatenation.
+explicit->done us through typeof();
+function->it is the block of code which is used to perform some specific task.
+what is iife function?
+IIFE stands for the imidiate invoke function expression, it usually written in the same line or we can call it inline function expression.
+(IIFE ->Arrow function can't be defined in IIFE function, IIFE function dont give (return value), only immediate execution is possible).
+Arrow function-> the function defined using arrow with in the program. ()=>{}
+PRE defined Functions-> Functions which are defined within the language to use directly.
+Control flow-> To flow the program flow usng certain type of instructions such as (if else).
+Logical Operators-> AND, OR, NOT->(&&,||,!)
+PRE and POST increment-> ++x, x++ -> increase first then print-> PRE, Print first then increase->POST
+LOOPS-> for, while, do while.
+ARRAY-> A collection of multiple elements, it stores its element contigous memory allocation.
+Array ex-> let num=[1,2,3,"tapu","goli","sonu","pinku", 23.34,"gogi"];
+CLOSURE-> Taking properities from the parent scope, by the child scope is called closure , not the other way around.
+Window-> Operating system working as a parent for the browser in local system ,all the things present in the window interface inside the inspet element in the browser.
+everything under the hood in javascript is object.
+ex-> let arr=[1,2,3,4,5,6,7,8].
+console.log(typeof(arr)); -> object;
+V8-> google engine , which provides enviorment to run the javascript in the browser.
+NaN-> Not a number-> datatype-> number
+Shallow copy and deep copy-> original array when concatenated is called deep copy.
+deep copy-> when changes made in copy will reflect on original array.(concatenation(+))
+shallow copy-> when changes made in copy will not reflect on original array.(REST AND SPREAD).
+(==)-> checks value but not type.
+(===)-> checks value and also type (in one go).
+Array(12).fill(0); //all the elements in the array arr3 are 0, because fill function put the element in all indexed values.
+arr3.unshift(-2,-1); //unshift-> used to push the elements at the front of the array.
+arr5.pop(); //to remove the element from the last.
+arr5.shift();//to remove the element from the starting of the array.
+console.log(arr5.includes(2)); //includes function -> helps you to find whether the number is present in the array or not, and return true or false.
+object-> An object in JavaScript is a standalone data structure that stores related data and functionality as a collection of properties (variables) and methods (functions).
+object -> also are used as key: value pair.
+undefined is in the terminal because there is NO RETURN statement in the function inside the object.
+JSON-> javascript Object Notation, ex-> every single key and string value is enwraped with in (""), except numbers and booleans.
+STRINGIFY-> to convert the object into JSON file, Parse -> to convert JSON file into objectc.
+Function inside the objects is called Methods.
+SPREAD-> used to combine two arrays together or(1st array with 2nd array) and then printing the 2nd array ,and in final output we will get both array lined up.
+ex->...spread.(check index.js)
+REST-> used to get the name/ value of 1st and 2nd value of array and the last value(or REST values of array are stored in REST operator).
+ex->...REST.(check index.js)
+DATE operator IST(INDIAN STANDARD TIME ZONE)=> To get all the date , time ,day ,months, seconds , hours ,etc related to time and date.
+Object.getOwnPropertyDescriptor() => is a JavaScript method that returns a descriptor object outlining the configuration of a specific, direct property on an object. 
+This descriptor provides details on four internal attributes: value, writable, enumerable, and configurable.
+

@@ -1,0 +1,18 @@
+<nav class="bg-red-500 h-[50px] flex  items-start space-x-4 mx-4 my-4">
+        <a class="p-2 text-2xl " href="http://" target="_blank" rel="noopener noreferrer">HOME </a>
+        <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Webpress </a>
+        <!-- <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Web Design + </a> -->
+         <form action="">
+            <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Web Design + </a>
+            <select name="" id="">
+                <option value="">Resources</option>
+                <option value="">Links</option>
+                <option value="">Tutorials + </option>
+            </select>
+
+         </form>
+        <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Inspiration </a>
+        <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Contact </a>
+        <a class="p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">About </a>
+        <!-- <a href="http://" target="_blank" rel="noopener noreferrer">HOME</a> -->
+    </nav>

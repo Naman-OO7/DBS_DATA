@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="bg-red-500 sticky shadow-md h-[50px] flex  items-start space-x-4 mx-4 my-4">
+        <a class=" font-serif p-2 text-2xl " href="http://" target="_blank" rel="noopener noreferrer">HOME </a>
+        <a class=" font-serif p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Webpress </a>
+        <div class=" font-serif p-2 text-2xl group/main relative">Web Design + 
+          <ul class=" font-serif p-2 my-2 text-2xl hidden group-hover/main:block absolute">
+                <!-- <span>Web Design +</span> -->
+                <li>Resources</li>
+                <li>Link</li>
+                <li class=" font-serif p-2 text-2xl group/sub cursor-pointer ">Tutorial +
+                      <ul class=" font-serif p-2 my-2 text-2xl hidden group-hover/sub:block border  bg-slate-300">
+                      <li>HTML/CSS</li>
+                      <li>Jquery</li>
+                      <li>
+                      <li class=" font-serif p-2 text-2xl group/sub1 cursor-pointer ">Other +
+                      <ul class=" font-serif p-2 my-2 text-2xl hidden group-hover/sub1:block">
+                      <li>Stuff</li>
+                      <li>Things</li>
+                      <li>Other Stuff +</li>
+                      </ul>
+                       </li>
+                      </li>
+                      </ul>
+                </li>                   
+          </ul>
+        </div>
+         
+
+        
+        <a class=" font-serif p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Inspiration </a>
+        <a class="font-serif p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">Contact </a>
+        <a class=" font-serif p-2 text-2xl" href="http://" target="_blank" rel="noopener noreferrer">About </a>
+        <!-- <a href="http://" target="_blank" rel="noop ener noreferrer">HOME</a> -->
+    </nav>
+
+    <div class="flex ">
+    <div class=" font-sans flex text-2xl items-center justify-center m-4 h-[580px] w-6/12 bg-blue-500">
+        This is the Left Section.
+    </div>
+
+    <div class="m-4 font-mono text-2xl flex items-center justify-center  h-[580px] w-6/12 bg-green-500">
+        This is the Right Section.
+    </div>
+    </div>
+    
+    <footer class="bg-gray-400 flex items-center font-serif justify-center text-3xl text-black h-20 mx-4">
+        This is a footer tag.
+
+    </footer>
+    <br>
+    <br>
+    <div class="flex justify-evenly">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BMcB7VwnQvI?si=3R_6OSHt5uLjmwzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BMcB7VwnQvI?si=3R_6OSHt5uLjmwzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <div class="flex justify-evenly">
+    <img class="p-4 m-4 " src="./media/solar_system.jpg" alt="Solar System">
+    <img class="p-4 m-4 " src="https://picsum.photos/seed/picsum/200/300" alt="Mountain">
+
+    </div>
+
+    
+</body>
+</html>
