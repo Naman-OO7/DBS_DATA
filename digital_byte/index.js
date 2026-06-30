@@ -350,6 +350,35 @@ console.log(mydate.getUTCMonth());
 console.log(Object.getOwnPropertyDescriptor(Math,"PI")); // predefiend object in JS-> ES6
 console.log(Object.getOwnPropertyDescriptor(obj5,"car")); //my defined object in JS -> which can be writable, enumerable, and configurable.
 
+//higher order function -> ex. map , reduce ,filter.
+
+let num4=[1,2,3,4,5,6,7,8];
+
+let num5=num4.map((indx)=>{ //map is a higher order function and arrow function inside is called call back function , indx is iterator.
+    return indx*10;
+})
+
+console.log(num5);
+
+let num6=num4.map((value, index ,array)=>{  //map is used to iterate in the array to find the value , index and array (original) 
+    console.log(value);
+    console.log(index);
+    console.log(array);
+})
+
+let num7=num4.filter((val)=>{  //filter is used to print/filter the values from a certain number. ,also uses 3 paramateres value , index , array.
+    return val>5;
+})
+console.log(num7);
+
+let num8=num4.reduce((acc,val)=>{ //Reduce condenses an array of elements into a single final value by adding them up. and uses prevalue,inital value=0(always) and accumulator as parameters.
+    return acc+val;
+},0);
+console.log(num8);
+
+
+
+
 
 
 

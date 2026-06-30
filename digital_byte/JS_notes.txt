@@ -21,7 +21,8 @@ PRE defined Functions-> Functions which are defined within the language to use d
 Control flow-> To flow the program flow usng certain type of instructions such as (if else).
 Logical Operators-> AND, OR, NOT->(&&,||,!)
 PRE and POST increment-> ++x, x++ -> increase first then print-> PRE, Print first then increase->POST
-LOOPS-> for, while, do while.
+LOOPS-> for, while, do while, {for loops are of 4 types=> [for in , for each , for of]}
+{for each=> only applied on array} and {for in, for of=> applied only on objects.}
 ARRAY-> A collection of multiple elements, it stores its element contigous memory allocation.
 Array ex-> let num=[1,2,3,"tapu","goli","sonu","pinku", 23.34,"gogi"];
 CLOSURE-> Taking properities from the parent scope, by the child scope is called closure , not the other way around.
@@ -54,4 +55,23 @@ ex->...REST.(check index.js)
 DATE operator IST(INDIAN STANDARD TIME ZONE)=> To get all the date , time ,day ,months, seconds , hours ,etc related to time and date.
 Object.getOwnPropertyDescriptor() => is a JavaScript method that returns a descriptor object outlining the configuration of a specific, direct property on an object. 
 This descriptor provides details on four internal attributes: value, writable, enumerable, and configurable.
+Higher Order Function(HoF)-> The function which take other functions as parameter/ arguments and return other funtions as result or parameter is called higher order function.
+{higher order function -> ex. map , reduce ,filter}.
+The other function passed as parameter/ arguments is called callback function (CoF).
 
+Map => is an iterative array method executing a transformation callback on every element. It returns a new array of identical length containing modified values without mutating the original source dataset.
+Element: The active, individual item from the target array currently undergoing processing within the loop iteration.
+Index: The numerical index position representing the current element's precise placement location within the source array.
+Array: The original execution context array object upon which the map method was invoked and called.
+
+Filter is an iterative method evaluating every array element against a specified truth test. It returns a brand new shallow copy containing only elements passing the predicate function's true condition.
+Element: The specific array element currently being evaluated against the truth criteria of the predicate function.
+Index: The active item's sequential index location tracked during the iterative processing of the target array.
+Array: The full source array container being structurally traversed and evaluated by the filter iteration process.
+
+Reduce executes a user-supplied reducer callback function on each element of the array sequentially. It completely aggregates these elements into a single accumulated output return value, shifting internal state forward.
+Accumulator: The persistent state container storing the cumulative return value from all prior processing execution steps.
+Current Value: The individual element within the array currently being systematically processed by the specific reducer logic.
+Index: The sequential index integer mapping the current element's specific position during the iterative process traversal.
+Array: The target data array object containing all the values traversed by the reduce method structure.
+Initial Value: The starting value argument assigned to the accumulator object on the very first loop execution.
