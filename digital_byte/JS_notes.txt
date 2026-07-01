@@ -59,13 +59,13 @@ Higher Order Function(HoF)-> The function which take other functions as paramete
 {higher order function -> ex. map , reduce ,filter}.
 The other function passed as parameter/ arguments is called callback function (CoF).
 
-Map => is an iterative array method executing a transformation callback on every element. It returns a new array of identical length containing modified values without mutating the original source dataset.
-Element: The active, individual item from the target array currently undergoing processing within the loop iteration.
+Map => is an iterative array method/function executing a transformation callback on every element. It returns a new array of identical length containing modified values without mutating the original source array.
+Value: The active, individual item from the target array currently undergoing processing within the loop iteration.
 Index: The numerical index position representing the current element's precise placement location within the source array.
 Array: The original execution context array object upon which the map method was invoked and called.
 
-Filter is an iterative method evaluating every array element against a specified truth test. It returns a brand new shallow copy containing only elements passing the predicate function's true condition.
-Element: The specific array element currently being evaluated against the truth criteria of the predicate function.
+Filter is an iterative method/function evaluating every array element against a specified truth test/condition (ex. a[value]>5/n). It returns a brand new shallow copy containing only elements passing the truth test/condition from the specified function.
+Value: The specific array element currently being evaluated against the truth criteria of the filter function.
 Index: The active item's sequential index location tracked during the iterative processing of the target array.
 Array: The full source array container being structurally traversed and evaluated by the filter iteration process.
 
