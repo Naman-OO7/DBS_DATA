@@ -376,6 +376,16 @@ let num8=num4.reduce((acc,val)=>{ //Reduce condenses an array of elements into a
 },0);
 console.log(num8);
 
+let d12=20;   //swapping 2 no.s without using 3rd varibale.
+let e1=10;
+
+d12=d12+e1;
+e1=d12-e1;
+d12=d12-e1;
+
+console.log("d12 ki value " + d12,"e1 ki value "+ e1);
+
+
 
 
 
