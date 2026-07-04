@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom3</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- new h1 tag. -->
+    <h1 id="h1">This is h1</h1> 
+     <!-- button created -->
+    <button id="b1" class="h-[50px] w-[100px] border-4 rounded-md"> Click Here!!</button>
+    
+</body>
+<script>
+    let h1=document.getElementById("h1"); //h1 tag accessed.
+    h1.style.backgroundColor="red"; //background of tag to red.
+
+    let b1=document.getElementById("b1");
+    b1.addEventListener('click',()=>{ //event listener to add an event on button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
+        h1.style.background="green";//to change background of tag into green from red.
+    })
+</script>
+</html>

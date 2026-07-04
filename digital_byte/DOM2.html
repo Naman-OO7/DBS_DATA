@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+</head>
+<body>
+    <div id="my_div"> <!-- this is div1. -->
+
+    </div>
+    <main id="maintag"> 
+        <!-- this is an example of main tag containing id maintag mimicking the body tag. -->
+         <!-- because we cant give id to body tag for sematic purposes. -->
+
+    </main>
+</body>
+<script> //JS script code
+    //CRUD OPERATIONS
+    let div=document.createElement("div"); //this div is created through js commands. [CREATE]
+    div.innerHTML="This is 1st div"; // to add text inside the div tag. 
+    document.body.appendChild(div); // body works as an id for body tag , to access / add the new tags inside the html file , we use body as tag name or id name.
+
+    let div2=document.getElementById("my_div"); // div2 works as store varibale to create a new div called div3 , get element by id to fetch my_div .
+    let div3=document.createElement("div"); //div3 is child div inside body div , create element to create new section/tag ex. div.
+    div3.innerHTML="This is my new div inside my_div id"; // innerhtml to give text inside tag.
+    div2.appendChild(div3); //append child to add the div section inside the body tag.
+
+    let main=document.getElementById("maintag"); //main tag works as body tag contain id maintag. [READ]
+    let h1=document.createElement("h1");//to create h1 tag.
+    h1.innerHTML="This is h1 tag"; //to give text inside the h1 tag.
+    main.appendChild(h1) //to add h1 tag inside the main tag.
+
+    let main1=document.getElementById("maintag"); //main tag works as body tag contain id maintag. [READ]
+    let h2=document.createElement("h2");//to create h2 tag.
+    h2.innerHTML="This is h2 tag"; //to give text inside the h2 tag.
+    main1.appendChild(h2) //to add h1 tag inside the main tag.
+
+    //UPDATE
+    update=document.querySelector("h1"); //Queryselector is used to select the tag using CSS selector property.
+    update.innerHTML="This is h3 tag now";//to update the value of h1 tag existing text.
+
+    //REMOVE
+    h2.remove(); //to remove the h2 tag from the html document.
+
+
+</script>
+</html>

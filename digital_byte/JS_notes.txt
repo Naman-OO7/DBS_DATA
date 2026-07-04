@@ -1,3 +1,5 @@
+CLASS NOTES (JS BASICS).
+
 What is a language? - medium to communicate with each other.
 .:;-> tokens-> smallest unit of any programming language.
 Keywords-> reserved/pre defined words in programming language.
@@ -75,3 +77,4 @@ Current Value: The individual element within the array currently being systemati
 Index: The sequential index integer mapping the current element's specific position during the iterative process traversal.
 Array: The target data array object containing all the values traversed by the reduce method structure.
 Initial Value: The starting value argument assigned to the accumulator object on the very first loop execution.
+HOISTING=>
