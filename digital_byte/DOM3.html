@@ -7,11 +7,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <main class="flex flex-col items-center justify-center min-h-screen w-full">
     <!-- new h1 tag. -->
+    
     <h1 id="h1">This is h1</h1> 
      <!-- button created -->
-    <button id="b1" class="h-[50px] w-[100px] border-4 rounded-md"> Click Here!!</button>
-    
+    <div class="flex gap-4">
+    <button id="b1" class=" my-4 h-[50px] w-[100px] border-2 bg-green-500 rounded-md font-semibold"> Click Here!!</button>
+    <button id="b2" class=" my-4 h-[50px] w-[180px] border-2 rounded-md font-semibold"> Click Here again!!</button>
+    </div>    
+    <div id="div_color" class=" rounded-md my-5 w-[500px] h-[300px] border-2 border-black">
+    </div>
+    <div class="flex flex-row gap-4 items-center">
+        <button id="btn1" class="flex h-[50px] w-[100px] border-2 rounded-md bg-violet-500"></button>
+        <button id="btn2" class="flex h-[50px] w-[100px] border-2 rounded-md bg-indigo-300"></button>
+        <button id="btn3" class="flex h-[50px] w-[100px] border-2 rounded-md bg-blue-800"></button>
+        <button id="btn4" class="flex h-[50px] w-[100px] border-2 rounded-md bg-green-500"></button>
+        <button id="btn5" class="flex h-[50px] w-[100px] border-2 rounded-md bg-yellow-500"></button>
+        <button id="btn6" class="flex h-[50px] w-[100px] border-2 rounded-md bg-orange-500"></button>
+        <button id="btn7" class="flex h-[50px] w-[100px] border-2 rounded-md bg-red-500"></button>
+        <button id="btn8" class="flex h-[50px] w-[100px] border-2 rounded-md bg-white"></button>
+        
+    </div>
+    </main>
 </body>
 <script>
     let h1=document.getElementById("h1"); //h1 tag accessed using id name.
@@ -20,6 +38,45 @@
     let b1=document.getElementById("b1");
     b1.addEventListener('click',()=>{ //event listener to add an event on button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
         h1.style.background="green";//to change background of tag into green from red.
+    })
+
+    let b2=document.getElementById("b2");
+    b2.addEventListener('click',()=>{
+        h1.style.background="white";
+    })
+
+    let btn1=document.getElementById("btn1");
+    btn1.addEventListener('click',()=>{
+        div_color.style.background="violet";
+
+    })
+    let btn2=document.getElementById("btn2");
+    btn2.addEventListener('click',()=>{
+        div_color.style.background="indigo";
+    })
+    let btn3=document.getElementById("btn3");
+    btn3.addEventListener('click',()=>{
+        div_color.style.background="blue";
+    })
+    let btn4=document.getElementById("btn4");
+    btn4.addEventListener('click',()=>{
+        div_color.style.background="green";
+    })
+    let btn5=document.getElementById("btn5");
+    btn5.addEventListener('click',()=>{
+        div_color.style.background="yellow";
+    })
+    let btn6=document.getElementById("btn6");
+    btn6.addEventListener('click',()=>{
+        div_color.style.background="orange";
+    })
+    let btn7=document.getElementById("btn7");
+    btn7.addEventListener('click',()=>{
+        div_color.style.background="red";
+    })
+    let btn8=document.getElementById("btn8");
+    btn8.addEventListener('click',()=>{
+        div_color.style.background="white";
     })
 </script>
 </html>
