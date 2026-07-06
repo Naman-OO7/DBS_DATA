@@ -10,13 +10,14 @@
     <main class="flex flex-col items-center justify-center min-h-screen w-full">
     <!-- new h1 tag. -->
     
-    <h1 id="h1">This is h1</h1> 
+    <h1 id="h1" class="text-xl font-serif">This is h1!!</h1> 
      <!-- button created -->
     <div class="flex gap-4">
-    <button id="b1" class=" my-4 h-[50px] w-[100px] border-2 bg-green-500 rounded-md font-semibold"> Click Here!!</button>
-    <button id="b2" class=" my-4 h-[50px] w-[180px] border-2 rounded-md font-semibold"> Click Here again!!</button>
+    <button id="b1" class=" my-4 h-[50px] w-[100px] border-2 bg-green-500 rounded-md font-semibold"> Click Here!!</button> <!-- button, change color to green -->
+    <button id="b2" class=" my-4 h-[50px] w-[180px] border-2 rounded-md font-semibold"> Click Here again!!</button> <!-- Reset button, color to white -->
     </div>    
-    <div id="div_color" class=" rounded-md my-5 w-[500px] h-[300px] border-2 border-black">
+    <div id="div_color" class=" shadow-lg rounded-md my-5 w-[500px] h-[300px] border-2 border-black">
+        <!-- This div is for showing colors.  -->
     </div>
     <div class="flex flex-row gap-4 items-center">
         <button id="btn1" class="flex h-[50px] w-[100px] border-2 rounded-md bg-violet-500"></button>
@@ -26,9 +27,10 @@
         <button id="btn5" class="flex h-[50px] w-[100px] border-2 rounded-md bg-yellow-500"></button>
         <button id="btn6" class="flex h-[50px] w-[100px] border-2 rounded-md bg-orange-500"></button>
         <button id="btn7" class="flex h-[50px] w-[100px] border-2 rounded-md bg-red-500"></button>
-        <button id="btn8" class="flex h-[50px] w-[100px] border-2 rounded-md bg-white"></button>
-        
+        <button id="btn8" class="flex h-[50px] w-[100px] border-2 rounded-md bg-white"></button> 
+        <button id="btn9" class="flex items-center justify-center h-[50px] w-[100px] border-2 rounded-md font-semibold">Or dikhao!!</button>  
     </div>
+    
     </main>
 </body>
 <script>
@@ -78,5 +80,29 @@
     btn8.addEventListener('click',()=>{
         div_color.style.background="white";
     })
+
+    let btn9=document.getElementById("btn9");
+    btn9.addEventListener("click",()=>{
+        div_color.style.backgroundImage="url('./media/laddu.jpg')"
+        div_color.style.backgroundRepeat= "no-repeat";
+        div_color.style.backgroundPosition= "center";
+        div_color.style.backgroundSize= "contain";
+    })
+    btn9.addEventListener("dblclick",()=>{
+        div_color.style.backgroundImage="url('./media/barfi.jpg')"
+        div_color.style.backgroundRepeat= "no-repeat";
+        div_color.style.backgroundPosition= "center";
+        div_color.style.backgroundSize= "contain";
+    })
+    btn9.addEventListener("mouseup",(e)=>{
+       // div_color.style.backgroundImage="url('./media/barfi.jpg')"
+        //div_color.style.backgroundRepeat= "no-repeat";
+        //div_color.style.backgroundPosition= "center";
+        //div_color.style.backgroundSize= "contain";
+        e.preventDefault();
+        div_color.innerHTML= "<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>"
+    })
+
+
 </script>
 </html>
