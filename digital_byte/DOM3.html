@@ -30,6 +30,7 @@
         <button id="btn8" class="flex h-[50px] w-[100px] border-2 rounded-md bg-white"></button> 
         <button id="btn9" class="flex items-center justify-center h-[50px] w-[100px] border-2 rounded-md font-semibold">Or dikhao!!</button>  
     </div>
+    <!-- <h1>This is an example of mouse down.</h1> -->
     
     </main>
 </body>
@@ -101,6 +102,22 @@
         //div_color.style.backgroundSize= "contain";
         e.preventDefault();
         div_color.innerHTML= "<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>"
+    })
+    btn9.addEventListener("mousedown",(e)=>{
+       // div_color.style.backgroundImage="url('./media/barfi.jpg')"
+        //div_color.style.backgroundRepeat= "no-repeat";
+        //div_color.style.backgroundPosition= "center";
+        //div_color.style.backgroundSize= "contain";
+        e.preventDefault();
+        div_color.innerHTML= "<h1>This is an example of mouse down.</h1>";
+    })
+    btn9.addEventListener("contextmenu",(e)=>{
+       // div_color.style.backgroundImage="url('./media/barfi.jpg')"
+        //div_color.style.backgroundRepeat= "no-repeat";
+        //div_color.style.backgroundPosition= "center";
+        //div_color.style.backgroundSize= "contain";
+        e.preventDefault();
+        div_color.innerHTML= "<h2>This is an example of context menu.</h2>";
     })
 
 
