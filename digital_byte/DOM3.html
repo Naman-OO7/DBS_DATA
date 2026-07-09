@@ -20,15 +20,16 @@
         <!-- This div is for showing colors.  -->
     </div>
     <div class="flex flex-row gap-4 items-center">
-        <button id="btn1" class="flex h-[50px] w-[100px] border-2 rounded-md bg-violet-500"></button>
-        <button id="btn2" class="flex h-[50px] w-[100px] border-2 rounded-md bg-indigo-300"></button>
-        <button id="btn3" class="flex h-[50px] w-[100px] border-2 rounded-md bg-blue-800"></button>
-        <button id="btn4" class="flex h-[50px] w-[100px] border-2 rounded-md bg-green-500"></button>
-        <button id="btn5" class="flex h-[50px] w-[100px] border-2 rounded-md bg-yellow-500"></button>
-        <button id="btn6" class="flex h-[50px] w-[100px] border-2 rounded-md bg-orange-500"></button>
-        <button id="btn7" class="flex h-[50px] w-[100px] border-2 rounded-md bg-red-500"></button>
-        <button id="btn8" class="flex h-[50px] w-[100px] border-2 rounded-md bg-white"></button> 
-        <button id="btn9" class="flex items-center justify-center h-[50px] w-[100px] border-2 rounded-md font-semibold">Or dikhao!!</button>  
+        <!-- buttons, hover and active class are used in css for creating click effect in html button, transition transform is use to make smooth transition in click effect --> 
+        <button id="btn1" class="hover:bg-violet-300 hover:shadow-inner transition-transform active:border-none active:scale-95 active:bg-violet-900 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-violet-500"></button>
+        <button id="btn2" class="hover:bg-indigo-200 hover:shadow-inner transition-transform active:scale-95 active:bg-indigo-900 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-indigo-300"></button>
+        <button id="btn3" class="hover:bg-blue-300 hover:shadow-inner transition-transform active:scale-95 active:bg-blue-900  flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-blue-600"></button>
+        <button id="btn4" class="hover:bg-green-300 hover:shadow-inner transition-transform active:scale-95 active:bg-green-800 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-green-500"></button>
+        <button id="btn5" class="hover:bg-yellow-200 active:border-0 transition-transform active:mt-4 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-yellow-500"></button>
+        <button id="btn6" class="hover:bg-orange-300 active:border-0  active:mt-4 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-orange-500"></button>
+        <button id="btn7" class="hover:bg-red-400 active:border-0  active:mt-4 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-red-500"></button>
+        <button id="btn8" class="hover:bg-gray-500 active:border-0  active:mt-4 flex drop-shadow-lg h-[50px] w-[100px] border-2 rounded-md bg-white"></button> 
+        <button id="btn9" class="hover:opacity-30 active:border-0 transition-transform active:mt-4 flex drop-shadow-lg items-center justify-center h-[50px] w-[100px] border-2 rounded-md font-semibold">Or dikhao!!</button>  
     </div>
     <!-- <h1>This is an example of mouse down.</h1> -->
     
@@ -80,9 +81,10 @@
     let btn8=document.getElementById("btn8");
     btn8.addEventListener('click',()=>{
         div_color.style.background="white";
+        resetDiv();
     })
 
-    let btn9=document.getElementById("btn9");
+    /*let btn9=document.getElementById("btn9");
     btn9.addEventListener("click",()=>{
         div_color.style.backgroundImage="url('./media/laddu.jpg')"
         div_color.style.backgroundRepeat= "no-repeat";
@@ -118,24 +120,58 @@
         //div_color.style.backgroundSize= "contain";
         e.preventDefault();
         div_color.innerHTML= "<h2>This is an example of context menu.</h2>";
-    })
-    //btn9.addEventListener("contextmenu",(e)=>{
-       // div_color.style.backgroundImage="url('./media/barfi.jpg')"
-        //div_color.style.backgroundRepeat= "no-repeat";
-        //div_color.style.backgroundPosition= "center";
-        //div_color.style.backgroundSize= "contain";
-      //  e.preventDefault();
-     //   div_color.innerHTML= "<h2>This is an example of context menu.</h2>";
-    //})
+    })*/
 
-    //btn9.addEventListener("contextmenu",(e)=>{
-       // div_color.style.backgroundImage="url('./media/barfi.jpg')"
-        //div_color.style.backgroundRepeat= "no-repeat";
-        //div_color.style.backgroundPosition= "center";
-        //div_color.style.backgroundSize= "contain";
-      //  e.preventDefault();
-     //   div_color.innerHTML= "<h2>This is an example of context menu.</h2>";
-    //})
+    let btn9 = document.getElementById("btn9"); // btn9 to access btn9 id
+    let div_color = document.getElementById("div_color"); // main div id.
+    let clickTimer = null; //to make difference btw single and dbl click.
+
+
+function resetDiv() {
+    //works as a reset option so that innerhtml content and background image value can become none again
+    div_color.innerHTML = ""; // inner html bcoz of video tag.
+    div_color.style.backgroundImage = "none"; // to make backgroundimage value=none
+}
+
+// 1. Handle Clicks (Separating Single and Double Click)
+btn9.addEventListener("click", (e) => {
+    if (clickTimer) { //to separate single and dbl click time. , if fires up only when clicktimer=1 value.
+        clearTimeout(clickTimer); // clearTimeout kills the entire code of single click  code if user do double click.
+        clickTimer = null; // to give clicktimer=0 value.
+        return; // Skip single click logic if it's a double click
+    }
+
+    clickTimer = setTimeout(() => { // setTimeout forces the browser to wait for 250 milliseconds so that the browser doesn't trigger the 
+                                    // single click function instantly and wait to see that either the user is doing single click or double click.
+        // Single Left Click Action
+        resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
+        //Properities of bacjground image.
+        div_color.style.backgroundImage = "url('./media/laddu.jpg')";
+        div_color.style.backgroundRepeat = "no-repeat";
+        div_color.style.backgroundPosition = "center";
+        div_color.style.backgroundSize = "contain";
+        clickTimer = null;
+    }, 250); // 250ms delay gives the user time to double-click
+});
+
+// 2. Handle Double Click
+btn9.addEventListener("dblclick", () => { 
+    resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
+    div_color.style.backgroundImage = "url('./media/barfi.jpg')";
+    div_color.style.backgroundRepeat = "no-repeat";
+    div_color.style.backgroundPosition = "center";
+    div_color.style.backgroundSize = "contain";
+});
+
+// 3. Handle Right Click (Context Menu)
+btn9.addEventListener("contextmenu", (e) => { // left click action
+    e.preventDefault(); // Prevents the default browser right-click menu
+    resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
+    div_color.innerHTML ="<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>";// video tag to access video inside the div tag.
+    //innerHTML forces the video tag/ any tag of html to fire/ used inside JS.
+});
+
+
     
     
 
