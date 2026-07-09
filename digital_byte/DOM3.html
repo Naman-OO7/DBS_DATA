@@ -41,7 +41,7 @@
 
     let b1=document.getElementById("b1");
     b1.addEventListener('click',()=>{ //event listener to add an event on button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
-        h1.style.background="green";//to change background of tag into green from red.
+        h1.style.background="green"; //to change background of tag into green from red.
     })
 
     let b2=document.getElementById("b2");
@@ -134,9 +134,9 @@ function resetDiv() {
 }
 
 // 1. Handle Clicks (Separating Single and Double Click)
-btn9.addEventListener("click", (e) => {
-    if (clickTimer) { //to separate single and dbl click time. , if fires up only when clicktimer=1 value.
-        clearTimeout(clickTimer); // clearTimeout kills the entire code of single click  code if user do double click.
+btn9.addEventListener("click", (e) => { //event listener to add an event on button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
+    if (clickTimer) { //to separate single and dbl click time, it fires (if statement) only when (clicktimer=1) value.
+        clearTimeout(clickTimer); // clearTimeout kills the entire code of single click code if user do double click.
         clickTimer = null; // to give clicktimer=0 value.
         return; // Skip single click logic if it's a double click
     }
@@ -150,17 +150,17 @@ btn9.addEventListener("click", (e) => {
         div_color.style.backgroundRepeat = "no-repeat";
         div_color.style.backgroundPosition = "center";
         div_color.style.backgroundSize = "contain";
-        clickTimer = null;
+        clickTimer = null; // clicktTimer=0.
     }, 250); // 250ms delay gives the user time to double-click
 });
 
 // 2. Handle Double Click
 btn9.addEventListener("dblclick", () => { 
     resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
-    div_color.style.backgroundImage = "url('./media/barfi.jpg')";
-    div_color.style.backgroundRepeat = "no-repeat";
-    div_color.style.backgroundPosition = "center";
-    div_color.style.backgroundSize = "contain";
+    div_color.style.backgroundImage = "url('./media/barfi.jpg')"; // background image from media folder.
+    div_color.style.backgroundRepeat = "no-repeat"; // no repeat-> single pic on the whole div section. 
+    div_color.style.backgroundPosition = "center"; // backgrnd position center.
+    div_color.style.backgroundSize = "contain";// backgrnd size whole div.
 });
 
 // 3. Handle Right Click (Context Menu)
