@@ -163,14 +163,13 @@ btn9.addEventListener("dblclick", () => {
     div_color.style.backgroundSize = "contain";// backgrnd size whole div.
 });
 
-// 3. Handle Right Click (Context Menu)
+// 3. Handle Right Click (Context Menu) 
 btn9.addEventListener("contextmenu", (e) => { // left click action
     e.preventDefault(); // Prevents the default browser right-click menu
     resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
     div_color.innerHTML ="<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>"; // video tag to access video inside the div tag.
     //innerHTML forces the video tag/ any tag of html to fire/ used inside JS.
 });
-
 
 
 
