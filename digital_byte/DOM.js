@@ -8,7 +8,7 @@
 // DOM-> follows tree structure , All the information of the doucment(title , url , lang, doctype html, etc) lies in the root element <html> [whole document structure] inside the head tag.
 // The Edge of the div and other sections/tags(a,img,h1,nav) lie in the body tag.
 
-// //  DOCUMENT OBJECT MODEL (DOM) tree structure
+// DOCUMENT OBJECT MODEL (DOM) tree structure
 
 //                      WINDOW
 //                         │
@@ -51,7 +51,59 @@
 //event listener is an higher order funtion(HOF). empty raises a null pointer inside the function/program.
 //e.prevent default is used to prevent the leakage of form details from the event listener arrow function section
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
-//
+
+//COMMON DOM METHODS:-
+// =========================================================
+// document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), document.querySelector() document.querySelectorAll(),
+//  document.createElement(), document.createTextNode(), element.appendChild(), element.removeChild(), element.replaceChild(), element.insertBefore(),
+// element.setAttribute(), element.getAttribute(), element.removeAttribute().
+
+// =========================================================
+// COMMON DOM PROPERTIES:-
+// =========================================================
+// innerHTML, innerText, textContent, style, className, classList, id value, children, parentElement, firstChild, lastChild, 
+// nextElementSibling, previousElementSibling.
+
+// =========================================================
+// COMMON DOM EVENTS:-
+// =========================================================
+// click, dblclick, mouseover, mouseout, mousemove, keydown, key, keypress, submit, change, focus, blur, input, load, resiz, scroll.
+
+// =========================================================
+// EVENT FLOW:-
+// =========================================================
+
+// Window
+//    ↓
+// Document
+//    ↓
+// HTML
+//    ↓
+// BODY
+//    ↓
+// DIV
+//    ↓
+// BUTTON
+
+// Capturing Phase
+//         ↓
+// Target Phase
+//         ↓
+// Bubbling Phase
+
+// =========================================================
+// DOM MANIPULATION FLOW
+// =========================================================
+
+// Select Element
+//         ↓
+// Read Element
+//         ↓
+// Modify Element
+//         ↓
+// Add / Remove Element
+//         ↓
+// Update UI
 //
 //
 //
