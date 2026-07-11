@@ -146,10 +146,10 @@ btn9.addEventListener("click", (e) => { //event listener to add an event on butt
         // Single Left Click Action
         resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
         //Properities of bacjground image.
-        div_color.style.backgroundImage = "url('./media/laddu.jpg')";
-        div_color.style.backgroundRepeat = "no-repeat";
-        div_color.style.backgroundPosition = "center";
-        div_color.style.backgroundSize = "contain";
+        div_color.style.backgroundImage = "url('./media/laddu.jpg')"; // background image from media folder.
+        div_color.style.backgroundRepeat = "no-repeat"; // backgrnd position center.
+        div_color.style.backgroundPosition = "center"; // backgrnd position center.
+        div_color.style.backgroundSize = "contain"; // backgrnd size whole div.
         clickTimer = null; // clicktTimer=0.
     }, 250); // 250ms delay gives the user time to double-click
 });
