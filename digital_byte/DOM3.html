@@ -143,7 +143,7 @@ btn9.addEventListener("click", (e) => { //event listener to add an event on butt
 
     clickTimer = setTimeout(() => { // setTimeout forces the browser to wait for 250 milliseconds so that the browser doesn't trigger the 
                                     // single click function instantly and wait to see that either the user is doing single click or double click.
-        // Single Left Click Action
+        // Single Left Click Action.
         resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
         //Properities of bacjground image.
         div_color.style.backgroundImage = "url('./media/laddu.jpg')"; // background image from media folder.
@@ -151,7 +151,7 @@ btn9.addEventListener("click", (e) => { //event listener to add an event on butt
         div_color.style.backgroundPosition = "center"; // backgrnd position center.
         div_color.style.backgroundSize = "contain"; // backgrnd size whole div.
         clickTimer = null; // clicktTimer=0.
-    }, 250); // 250ms delay gives the user time to double-click
+    }, 250); // 250ms delay gives the user time to double-click.
 });
 
 // 2. Handle Double Click
@@ -164,9 +164,9 @@ btn9.addEventListener("dblclick", () => {
 });
 
 // 3. Handle Right Click (Context Menu) 
-btn9.addEventListener("contextmenu", (e) => { // left click action
-    e.preventDefault(); // Prevents the default browser right-click menu
-    resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again
+btn9.addEventListener("contextmenu", (e) => { // left click action.
+    e.preventDefault(); // Prevents the default browser right-click menu.
+    resetDiv(); //works as a reset option so that innerhtml content and background image value can become none again.
     div_color.innerHTML ="<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>"; // video tag to access video inside the div tag.
     //innerHTML forces the video tag/ any tag of html to fire/ used inside JS.
 });
