@@ -34,7 +34,7 @@ function sum(a,b) {//simple function.
 }
 console.log(sum(2,4));
 
-function multy(a,b) {
+function multy(a,b) { 
     return (a*b);
     
 }
@@ -91,6 +91,8 @@ let x=10;
 let y=10;
 let z=10;
 
+// use of &&, ||, ! operators in control flow statement.
+
 if(x>y && x>z){console.log("x is greater");
 }
 else if(y>z && y>x){console.log("y is greatest");
@@ -115,6 +117,8 @@ while(sa<5){
     sa++;
 }
 let da=5
+
+//do while loop exaample.
 do{
     console.log("da");
     da--;
@@ -131,6 +135,8 @@ console.log((function multy2(n1,m1){ //IIFE Function with RETURN statement
     return (n1*m1);
 })(4,5));
 
+// Math. is a class in JS which has many pre defined functions like random, PI, SQRT2, max, min, sin, cos etc.
+
 console.log(Math.random()); //PRE defined Function
 console.log(Math.PI);
 console.log(Math.SQRT2);
@@ -138,6 +144,8 @@ console.log(Math.max(2,4));
 console.log(Math.min(2,4));
 console.log(Math.sin(90));
 console.log(Math.cos(0));
+
+
 
 let big=10;
 var small=20;
