@@ -51,7 +51,8 @@
 //event listener is an higher order funtion(HOF). empty raises a null pointer inside the function/program.
 //e.prevent default is used to prevent the leakage of form details from the event listener arrow function section
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
-
+//(String Interpolation {$})=>When used inside backticks (``), ${variable_name} allows you to insert variables directly into a text string.
+// setinterval , clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
 //COMMON DOM METHODS:-
 // =========================================================
 // document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), document.querySelector() document.querySelectorAll(),
