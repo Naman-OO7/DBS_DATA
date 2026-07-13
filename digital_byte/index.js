@@ -137,13 +137,13 @@ console.log((function multy2(n1,m1){ //IIFE Function with RETURN statement
 
 // Math. is a class in JS which has many pre defined functions like random, PI, SQRT2, max, min, sin, cos etc.
 
-console.log(Math.random()); //PRE defined Function
-console.log(Math.PI); //pi
-console.log(Math.SQRT2); // square
-console.log(Math.max(2,4)); // maximum number 
-console.log(Math.min(2,4));//minimum number
-console.log(Math.sin(90)); //sin function
-console.log(Math.cos(0));//cos function
+console.log(Math.random()); //PRE defined Function => random is used to get a random digit from (1 to 9).
+console.log(Math.PI); //PI.
+console.log(Math.SQRT2); // square.
+console.log(Math.max(2,4)); // maximum number. 
+console.log(Math.min(2,4));//minimum number.
+console.log(Math.sin(90)); //sin function.
+console.log(Math.cos(0));//cos function.
 
 
 
