@@ -145,8 +145,6 @@ console.log(Math.min(2,4));//minimum number.
 console.log(Math.sin(90)); //sin function.
 console.log(Math.cos(0));//cos function.
 
-
-
 let big=10;
 var small=20;
 const ll=30;
