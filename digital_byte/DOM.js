@@ -8,7 +8,7 @@
 // DOM-> follows tree structure , All the information of the doucment(title , url , lang, doctype html, etc) lies in the root element <html> [whole document structure] inside the head tag.
 // The Edge of the div and other sections/tags(a,img,h1,nav) lie in the body tag.
 
-// DOCUMENT OBJECT MODEL (DOM) tree structure
+// DOCUMENT OBJECT MODEL (DOM) tree structure.
 
 //                      WINDOW
 //                         │
