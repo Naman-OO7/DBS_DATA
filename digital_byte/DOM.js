@@ -49,7 +49,7 @@
 //appendChild:This method moves an existing or newly created element from memory/code and inserts it as the last child inside the body tag or any other mentioned tag.
 //event listener to add event on a button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
 //event listener is an higher order funtion(HOF). empty raises a null pointer inside the function/program.
-//e.prevent default is used to prevent the leakage of form details from the event listener arrow function section
+//e.prevent default is used to prevent the leakage of form details from the event listener arrow function section.
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
 //(String Interpolation {$})=>When used inside backticks (``), ${variable_name} allows you to insert variables directly into a text string.
 // setinterval , clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
