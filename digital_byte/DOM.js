@@ -1,4 +1,4 @@
-// FILE STRUCTURE.{JS files}
+// FILE STRUCTURE.{JS files} :-
 // DOM=> contain simple Code.
 // DOM2=> contains create element , append child
 // DOM3=> contains eventlistener , buttons to used listener
