@@ -53,6 +53,26 @@
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
 //(String Interpolation {$})=>When used inside backticks (``), ${variable_name} allows you to insert variables directly into a text string.
 // setinterval , clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
+//setinterval is used to run a function repeatedly at specified intervals (in milliseconds) until it is stopped, while settimeout is used to run a function once after a specified delay (in milliseconds).
+//clearinterval is used to stop a setinterval timer, while cleartimeout is used to cancel a settimeout timer before it executes.
+//event bubbling is a type of event propagation in the DOM where an event starts at the most specific element (the target) and then bubbles up to its ancestors in the DOM tree, allowing parent elements to also respond to the event.
+//Event capturing is the opposite, where the event starts from the outermost element and propagates down to the target element, allowing parent elements to intercept the event before it reaches the target.
+//event emitter is a programming pattern that allows objects to emit events and other objects to listen for those events and respond accordingly, enabling communication between different parts of an application.
+//async programming is a programming paradigm that allows tasks to run independently of the main program flow, enabling non-blocking operations and improving performance, 
+//while synchronous programming executes tasks sequentially, blocking the program flow until each task is completed.
+//clock is a visual representation of time that displays the current hour, minute, and second, often using rotating hands or digital numbers to indicate the passage of time. using getminutes, get =getseconds, gethours, setinterval, clearinterval, and date object to create a clock in JS.
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //COMMON DOM METHODS:-
 // =========================================================
 // document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), document.querySelector() document.querySelectorAll(),
