@@ -1,7 +1,7 @@
 // FILE STRUCTURE.{JS files} :-
 // DOM=> contain simple Code.
 // DOM2=> contains create element , append child
-// DOM3=> contains eventlistener , buttons to used listener
+// DOM3=> contains eventlistener , buttons to used listener, clock, setinterval, settimeout, clearinterval, cleartimeout,
 
 //CLASS NOTES. {JS ADVANCE}
 // DOM-> Document Object Model.
