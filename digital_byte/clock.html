@@ -29,7 +29,7 @@
         function clock() {
             let time = new Date(); // new is a keyword called constructor used to create an instance/ of the date object.
             let hours = String(time.getHours()).padStart(2, '0'); // getHours() is a method of date object which returns the hour of the day in 24 hour format.
-            // padStart() is a method used to add leading zeros to the string if it is less than 2 digits.
+            // padStart() is a method used to add leading zeros to the string if it is less than 2 digits
             console.log(typeof(hours));
             let minutes = String(time.getMinutes()).padStart(2, '0');
             let seconds = String(time.getSeconds()).padStart(2, '0');
