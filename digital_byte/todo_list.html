@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="task" placeholder="enter your task" type="text">
+    <button id="btn" onclick="handleclick">Add</button>
+    <ul id="list">
+        
+    </ul>
+    
+</body>
+<script>
+    //CRUD operation is used to create, read, update and delete the data in the database. In this case we are using it to create a task list.
+    let task = document.getElementById("task");
+    console.log(task);
+    let list =document.getElementById("list")
+
+    document.getElementById("btn").
+    addEventListener('click',()=>{
+    console.log(task);
+    if(task.value===" "){
+        alert("Pleaase enter the task!!");
+        return;
+    }
+    else{
+        let li=document.createElement("li");
+        li.innerHTML=`${task.value}`;
+        list.appendChild(li);
+        
+        let btn2=document.createElement("button");
+        btn2.innerHTML="complete";
+        btn2.addEventListener('click',()=>{
+            li.style.textDecoration="line-through";
+            li.style.color="green";
+        })
+        let btn3=document.createElement("button");
+        btn3.innerHTML="delete";
+        btn3.addEventListener('click',()=>{
+            li.remove();
+        })
+        task.value="";
+      // task.focus();
+
+
+        li.appendChild(btn2);
+        li.appendChild(btn3);
+    }
+    })
+</script>
+</html>

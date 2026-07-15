@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Added Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Simple solid background, standard centering -->
+<body class="min-h-screen items-center bg-slate-900 flex justify-center pt-16 font-sans text-slate-200">
+
+    <!-- Standard card styling, no glassmorphism or heavy drop shadows -->
+    <div class="w-[800px] max-w-md h-[600px] mx-4 p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-lg">
+        
+        <h1 class="text-2xl font-semibold text-center mb-6 text-slate-100">
+            My <span class="text-pink-500">Tasks</span>
+        </h1>
+
+        <div class="flex gap-3 mb-6">
+            <!-- Clean, standard form inputs -->
+             <!-- id is task -->
+            <input 
+                id="task" 
+                type="text" 
+                placeholder="Enter your task..." 
+                class="flex-1 px-4 py-2.5 bg-slate-700 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-500 transition"
+            >
+            <!-- id is btn. -->
+            <button 
+                id="btn" 
+                class="px-5 py-2.5 bg-pink-600 text-white font-medium rounded-lg hover:bg-pink-700 active:bg-pink-800 transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500"
+            >
+                Add
+            </button>
+        </div>
+
+        <!-- space-y-3 handles the gap between list items automatically -->
+         <!-- id is list -->
+        <ul id="list" class="space-y-3"></ul>
+    </div>
+
+    <script>
+        let taskInput = document.getElementById("task");
+        let list = document.getElementById("list");
+        let addBtn = document.getElementById("btn");
+
+        showEmptyMessage();
+
+        addBtn.addEventListener("click", addTask);
+
+        taskInput.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") addTask();
+        });
+
+        function addTask() {
+            let taskValue = taskInput.value.trim();
+
+            if (taskValue === "") {
+                // Simpler error feedback: just swap border color classes
+                taskInput.classList.remove("border-slate-600");
+                taskInput.classList.add("border-red-500");
+                setTimeout(() => {
+                    taskInput.classList.remove("border-red-500");
+                    taskInput.classList.add("border-slate-600");
+                }, 800);
+                return;
+            }
+
+            let emptyMsg = document.querySelector(".empty-msg");
+            if (emptyMsg) emptyMsg.remove();
+
+            let li = document.createElement("li");
+            // Pragmatic styling applied directly via Tailwind classes
+            li.className = "flex items-center justify-between p-3 bg-slate-700/50 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors";
+
+            let span = document.createElement("span");
+            span.className = "flex-1 cursor-pointer select-none transition-colors text-slate-200";
+            span.textContent = taskValue;
+
+            // Toggle classes directly on click instead of relying on CSS descendant selectors
+           // span.addEventListener("click", function () {
+             //   span.classList.toggle("line-through");
+              //  span.classList.toggle("text-slate-500");
+              //  span.classList.toggle("text-slate-200");
+            //});
+
+            let cmpltBtn = document.createElement("button");
+            cmpltBtn.className = "text-xs px-2.5 py-1 rounded text-red-400 bg-red-900 hover:bg-red-900 border border-red-800 transition-colors focus:outline-none";
+            cmpltBtn.textContent = "Complete";
+
+            let deleteBtn = document.createElement("button");
+            deleteBtn.className = "text-xs px-2.5 gap-4 py-1 rounded text-red-400 bg-red-900 hover:bg-red-900 border border-red-800 transition-colors focus:outline-none";
+            deleteBtn.textContent = "Delete";
+
+            cmpltBtn.addEventListener("click", function () {
+                li.style.textDecoration = "line-through";
+                li.style.color = "green";
+            
+                
+            });
+
+            deleteBtn.addEventListener("click", function () {
+                if (list.children.length === 0) showEmptyMessage();
+                li.remove();
+                
+            });
+
+            li.appendChild(span);
+            li.appendChild(cmpltBtn);
+            li.appendChild(deleteBtn);
+            list.appendChild(li);
+
+            taskInput.value = "";
+            taskInput.focus();
+        }
+
+        function showEmptyMessage() {
+            let msg = document.createElement("li");
+            msg.className = "empty-msg text-center text-slate-500 py-8 text-sm";
+            msg.textContent = "No tasks yet — add one above!";
+            list.appendChild(msg);
+        }
+    </script>
+
+</body>
+</html>

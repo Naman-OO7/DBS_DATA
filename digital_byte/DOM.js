@@ -49,12 +49,13 @@
 //appendChild:This method moves an existing or newly created element from memory/code and inserts it as the last child inside the body tag or any other mentioned tag.
 //event listener to add event on a button so that it can perform certain action/properities mentioned inside the arrow function inside the listener.
 //event listener is an higher order funtion(HOF). empty raises a null pointer inside the function/program.
-//e.prevent default is used to prevent the leakage of form details from the event listener arrow function section.
+//e.prevent default is used to prevent the leakage of form details from the event listener arrow function section.(default action is present inside the browser.)
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
 //(String Interpolation {$})=>When used inside backticks (``), ${variable_name} allows you to insert variables directly into a text string.
-// setinterval , clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
-//setinterval is used to run a function repeatedly at specified intervals (in milliseconds) until it is stopped, while settimeout is used to run a function once after a specified delay (in milliseconds).
+//setinterval , clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
+//setinterval is used to run a function repeatedly at specified intervals (in milliseconds) until it is stopped by user, while settimeout is used to run a function once after a specified delay (in milliseconds).
 //clearinterval is used to stop a setinterval timer, while cleartimeout is used to cancel a settimeout timer before it executes.
+//event loop is a programming construct that allows asynchronous code to be executed in a non-blocking manner, enabling efficient handling of multiple tasks and events in a single-threaded environment.
 //event bubbling is a type of event propagation in the DOM where an event starts at the most specific element (the target) and then bubbles up to its ancestors in the DOM tree, allowing parent elements to also respond to the event.
 //Event capturing is the opposite, where the event starts from the outermost element and propagates down to the target element, allowing parent elements to intercept the event before it reaches the target.
 //event emitter is a programming pattern that allows objects to emit events and other objects to listen for those events and respond accordingly, enabling communication between different parts of an application.
