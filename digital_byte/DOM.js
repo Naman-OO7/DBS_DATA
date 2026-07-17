@@ -61,7 +61,7 @@
 //event emitter is a programming pattern that allows objects to emit events and other objects to listen for those events and respond accordingly, enabling communication between different parts of an application.
 //async programming is a programming paradigm that allows tasks to run independently of the main program flow, enabling non-blocking operations and improving performance, 
 //while synchronous programming executes tasks sequentially, blocking the program flow until each task is completed.
-//clock is a visual representation of time that displays the current hour, minute, and second, often using rotating hands or digital numbers to indicate the passage of time. using getminutes, get =getseconds, gethours, setinterval, clearinterval, and date object to create a clock in JS.
+//clock is a visual representation of time that displays the current hour, minute, and second, often using rotating hands or digital numbers to indicate the passage of time. using getminutes,getseconds, gethours, setinterval, clearinterval, and date object to create a clock in JS.
 //
 //
 //
