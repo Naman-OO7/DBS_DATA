@@ -52,7 +52,7 @@
 //e.prevent default is used to prevent the leakage of form details from the event listener arrow function section.(default action is present inside the browser.)
 //h2.remove()=> remove function is used to remove the existing tag from the html document using JS code.
 //(String Interpolation {$})=>When used inside backticks (``), ${variable_name} allows you to insert variables directly into a text string.
-//setinterval, clock , clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
+//setinterval, clock, clear interval, settimeout, clear timeout, event looping , event emitter, js is sync or async? , 
 //setinterval is used to run a function repeatedly at specified intervals (in milliseconds) until it is stopped by user, while settimeout is used to run a function once after a specified delay (in milliseconds).
 //clearinterval is used to stop a setinterval timer, while cleartimeout is used to cancel a settimeout timer before it executes.
 //event loop is a programming construct that allows asynchronous code to be executed in a non-blocking manner, enabling efficient handling of multiple tasks and events in a single-threaded environment.
