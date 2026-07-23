@@ -117,7 +117,7 @@
 // DOM MANIPULATION FLOW
 // =========================================================
 
-// Select Element
+// Select Element.
 //         ↓
 // Read Element
 //         ↓
