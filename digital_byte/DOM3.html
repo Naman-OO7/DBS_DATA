@@ -170,7 +170,71 @@ btn9.addEventListener("contextmenu", (e) => { // left click action.
     div_color.innerHTML ="<video src='./media/MarvelxDC_v1.mp4' muted controls autoplay loop></video>"; // video tag to access video inside the div tag.
     //innerHTML forces the video tag/ any tag of html to fire/ used inside JS.
 });
+// what is synchronus: when the process is executing one by one this manner is known as the synchronus manner
+// what is asynchronus: to achieve the parallel execution of thethreads we use asynch keyword ,to achieve asynchronus manner of the program.
 
+// async function load(){
+// try{
+// const response=await fetch("https://fakestoreapi.com/products/")
+// // console.log(response);
+// if(!response.ok){
+// console.log("smthng went wrong");
+            
+// }
+        
+// const data=await response.json()
+// console.log(data);
+        
+// } catch(error){
+// console.error(`smthng wnt wrong ${response.status}`)
+// }
+// }
+// load()
+// let response=await fetch("https://fakestoreapi.com/products/")
+// let data= await response.json();
+// console.log(data);
+ 
+// console.log(response);
+
+
+// what is closure?: An inner function + the memory of its outer function's variables.
+
+// what is lexical scope: L S is the ability of the js engine to search for the variable from its parent scope 
+
+  // function outer(){
+  // let count=10;
+  // function inner(){
+  // console.log(count);
+  // count++;        
+  // // console.log(count);
+  // }
+  // return inner
+  // }
+  // let out=outer();
+  // out()
+  // out()
+  // out()
+  
+   
+// what is temporal dead zone: js global execution context pdho....
+
+// console.log(a);
+// var a=10;
+// sum(2,4)
+// function sum(a,b){
+// console.log(a+b);
+// }
+
+// console.log(a);
+// var a=10;
+
+// sum(2,6)
+// function sum(){
+// console.log(a+b);
+// }
+
+// console.log(a);
+// const a=100;
 
 
 

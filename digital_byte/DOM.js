@@ -62,11 +62,11 @@
 //async programming is a programming paradigm that allows tasks to run independently of the main program flow, enabling non-blocking operations and improving performance, 
 //while synchronous programming executes tasks sequentially, blocking the program flow until each task is completed.
 //clock is a visual representation of time that displays the current hour, minute, and second, often using rotating hands or digital numbers to indicate the passage of time. using getminutes,getseconds, gethours, setinterval, clearinterval, and date object to create a clock in JS.
-//
-//
-//
-//
-//
+//closure is a feature in JavaScript where an inner function has access to the variables and parameters of its outer function, even after the outer function has finished executing, allowing for data encapsulation and maintaining state across function calls.
+//temporal dead zone is a behavior in JavaScript where variables declared with let and const are not accessible before their declaration, resulting in a ReferenceError if accessed too early, helping to prevent bugs related to variable hoisting and scope.
+//lexical scope is a concept in programming where the accessibility of variables is determined by their physical placement in the source code, meaning that inner functions have access to variables defined in their outer functions, but not vice versa, allowing for organized and predictable variable scoping.
+//promise is an object in JavaScript that represents the eventual completion (or failure) of an asynchronous operation and its resulting value, allowing for cleaner and more manageable handling of asynchronous code through methods like .then(), .catch(), and .finally().
+//hositing is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, allowing them to be used before they are explicitly defined in the code, which can lead to unexpected behavior if not properly understood.
 //
 //
 //
