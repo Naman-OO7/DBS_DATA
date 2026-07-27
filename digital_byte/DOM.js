@@ -67,7 +67,7 @@
 //lexical scope is a concept in programming where the accessibility of variables is determined by their physical placement in the source code, meaning that inner functions have access to variables defined in their outer functions, but not vice versa, allowing for organized and predictable variable scoping.
 //promise is an object in JavaScript that represents the eventual completion (or failure) of an asynchronous(async) operation and its resulting value, allowing for cleaner and more manageable handling of asynchronous code through methods like .then(), .catch(), and .finally().
 //hositing is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, allowing them to be used before they are explicitly defined in the code, which can lead to unexpected behavior if not properly understood.
-//
+//.
 //
 //
 //
