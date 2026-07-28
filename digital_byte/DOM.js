@@ -87,7 +87,7 @@
 // innerHTML, innerText, textContent, style, className, classList, id value, children, parentElement, firstChild, lastChild, 
 // nextElementSibling, previousElementSibling.
 
-// =========================================================
+// ==========================================================
 // COMMON DOM EVENTS:-
 // =========================================================
 // click, dblclick, mouseover, mouseout, mousemove, keydown, key, keypress, submit, change, focus, blur, input, load, resiz, scroll.
