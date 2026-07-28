@@ -69,7 +69,7 @@
 //hositing is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, allowing them to be used before they are explicitly defined in the code, which can lead to unexpected behavior if not properly understood.
 //
 //
-//.
+//
 //
 //
 //
