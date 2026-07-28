@@ -76,12 +76,12 @@
 //
 //
 //COMMON DOM METHODS:-
-// =========================================================
+// ==========================================================
 // document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), document.querySelector() document.querySelectorAll(),
 //  document.createElement(), document.createTextNode(), element.appendChild(), element.removeChild(), element.replaceChild(), element.insertBefore(),
 // element.setAttribute(), element.getAttribute(), element.removeAttribute().
 
-// =========================================================
+// ==========================================================
 // COMMON DOM PROPERTIES:-
 // =========================================================
 // innerHTML, innerText, textContent, style, className, classList, id value, children, parentElement, firstChild, lastChild, 
