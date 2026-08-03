@@ -93,7 +93,7 @@
 // click, dblclick, mouseover, mouseout, mousemove, keydown, key, keypress, submit, change, focus, blur, input, load, resiz, scroll.
 
 // =========================================================
-// EVENT FLOW:-
+// EVENT FLOW:-.
 // =========================================================
 
 // Window
