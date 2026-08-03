@@ -85,7 +85,7 @@
 // COMMON DOM PROPERTIES:-
 // ==========================================================
 // innerHTML, innerText, textContent, style, className, classList, id value, children, parentElement, firstChild, lastChild, 
-// nextElementSibling, previousElementSibling..
+// nextElementSibling, previousElementSibling.
 
 // ==========================================================
 // COMMON DOM EVENTS:-
