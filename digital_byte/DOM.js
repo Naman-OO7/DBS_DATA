@@ -120,7 +120,7 @@
 
 // Select Element.
 //         ↓
-// Read Element
+// Read Element.
 //         ↓
 // Modify Element
 //         ↓
