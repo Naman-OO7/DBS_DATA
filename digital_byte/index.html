@@ -166,7 +166,7 @@
             <button id="b1" style=" padding: 10px 20px ; border-color: brown; border-radius: 100px; background-color: chartreuse;" type="button">
            <strong> Click here for laddu!! </strong>
             <style>
-                .b1:hover{
+                #b1:hover{
                     background-color: cadetblue;
                 }
             </style>
@@ -256,7 +256,7 @@
   <br>
   <br>
   <h3>This is an example of embedded tag with photo reference.</h3>
-  <embed src="./media/solar_system.jpg" type="" width="500px" height="500px"> 
+  <embed src="./media/solar_system.jpg" type="video" width="500px" height="500px"> 
     <div>
         <h3>This is the example of Fieldset</h3>
         <form action="" method="get">
@@ -463,7 +463,19 @@
     </center>
     <br>
     <br>
+        <dialog id="myModal">
+    <h2>Special Offer!</h2>
+    <p>Sign up now to get a 20% discount code.</p>
+    <!-- Button to close dialog box -->
+    <button style="background-color: brown; font-size: 15px; color: aliceblue; font-family: 'Times New Roman', Times, serif;
+    border-radius: 20%; border: 2px solid blue; padding: 2px;"  onclick="document.getElementById('myModal').close()">Close</button>
+    </dialog>
 
+    <!-- Button to show dialog box -->
+    <div  style=" display:flex;  justify-content: center;">
+    <button style=" width: 250px; background-color: brown; font-size: 15px; color: aliceblue; font-family: 'Times New Roman', Times, serif;
+    border-radius: 50%; border: 2px solid blue; padding: 2px;" onclick="document.getElementById('myModal').showModal()">Open Modal</button>
+    </div>
 
 
   </main>
