@@ -391,6 +391,29 @@ d12=d12-e1;
 
 console.log("d12 ki value " + d12,"e1 ki value "+ e1);
 
+function parent(){ //example of closure function in JS.
+    let a=10;
+    function child(){
+        return(`This is a's value ${a}`); ;
+    }
+    return child; // return the child function to the close varibale for printing.
+    // console.log(child)
+}
+
+let close=parent();
+console.log(close);
+
+
+//let can be reassigned but can not be redeclared.
+//var can be reassigned as well as redeclared.
+//const can't be reassigned as well as can't be redeclared.
+
+let peter="i am spiderman"
+console.log(peter);
+peter="i am iron man"
+console.log(peter);
+
+
 
 
 

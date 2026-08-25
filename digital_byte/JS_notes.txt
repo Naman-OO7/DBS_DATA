@@ -3,8 +3,8 @@ CLASS NOTES (JS BASICS).
 What is a language? - medium to communicate with each other.
 .:;-> tokens-> smallest unit of any programming language.
 Keywords-> reserved/pre defined words in programming language.
-variables-> varibales are the container to store the values and variables are changeable.
-constants-> constants are the container but we can't change the value of the constants.
+variables-> varibales are the container to store the values and variables are changeable.(var)
+constants-> constants are also the container but we can't change the value of the constants.(const)
 = -> assignment operator, 10,20-> literals.
 let-> let provides block-scoped variable declaration. It prevents variable hoisting issues and forbids redeclaration within the same scope. Use let for values that change over time.
 var-> The original declaration keyword, var is function-scoped or globally scoped. It hoists variables to the top of their scope, allowing access before declaration, which often causes bugs.
@@ -77,4 +77,4 @@ Current Value: The individual element within the array currently being systemati
 Index: The sequential index integer mapping the current element's specific position during the iterative process traversal.
 Array: The target data array object containing all the values traversed by the reduce method structure.
 Initial Value: The starting value argument assigned to the accumulator object on the very first loop execution.
-HOISTING=>
+HOISTING=> Hoisting is a propetry in which the element is declared before the initialization of the element. It is applicable for var and function but not for let and const.
