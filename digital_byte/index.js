@@ -397,7 +397,7 @@ function parent(){ //example of closure function in JS.
         return(`This is a's value ${a}`); ;
     }
     return child; // return the child function to the close varibale for printing the answer.
-    // console.log(child)
+    // console.log(child).
 }
 
 let close=parent();
